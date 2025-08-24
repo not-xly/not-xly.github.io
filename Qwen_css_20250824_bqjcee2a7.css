@@ -1,0 +1,192 @@
+/* Fondo y estilo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a;
+    background-image: url('https://i.imgur.com/9u34wJg.png');
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(10, 10, 10, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+/* Título */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+h1 {
+    color: #00ffff;
+    font-size: 2.5em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header p {
+    color: #aaa;
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+/* Pestañas */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.nav-btn {
+    background-color: #00a2ff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.nav-btn:hover {
+    background-color: #0086cc;
+}
+.nav-btn.active {
+    background-color: #00ff88;
+    color: #002200;
+    font-weight: bold;
+}
+
+/* Secciones */
+.section {
+    display: none;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in;
+}
+.section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Tarjetas de Shards */
+.shards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.shard-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #333;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.shard-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 200, 255, 0.15);
+}
+.shard-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.shard-rarity {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-bottom: 8px;
+}
+.shard-effect-name {
+    color: #00d4ff;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.shard-family {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 8px;
+}
+.shard-description {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* Crafteos */
+#craftingList {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    white-space: pre-line;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Calculadora */
+.actions {
+    text-align: center;
+    margin: 20px 0;
+}
+#profitTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#profitTable th {
+    background-color: #111;
+    color: #00ffff;
+    padding: 12px;
+    text-align: left;
+}
+#profitTable td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #333;
+}
+#profitTable tr:hover {
+    background-color: #222;
+}
+.profit-positive {
+    color: #00ff88;
+    font-weight: bold;
+}
+.profit-negative {
+    color: #ff6666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .nav-btn {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+    .shard-card {
+        padding: 12px;
+    }
+}

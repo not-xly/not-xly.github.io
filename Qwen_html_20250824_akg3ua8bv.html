@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>xlyShards</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>xlyShards</h1>
+            <p>Calculadora de rentabilidad de Shards • Hypixel SkyBlock</p>
+        </header>
+
+        <!-- Pestañas -->
+        <div class="nav-buttons">
+            <button class="nav-btn active" onclick="showSection('shards')">Shards</button>
+            <button class="nav-btn" onclick="showSection('crafting')">Crafteos</button>
+            <button class="nav-btn" onclick="showSection('calculator')">Calculadora</button>
+        </div>
+
+        <!-- Sección: Shards -->
+        <div id="shards" class="section active">
+            <div class="shards-grid" id="shardsGrid">
+                <p>Cargando Shards...</p>
+            </div>
+        </div>
+
+        <!-- Sección: Crafteos -->
+        <div id="crafting" class="section">
+            <h3>🔁 Rutas de Crafteo</h3>
+            <div id="craftingList">Cargando crafteos...</div>
+        </div>
+
+        <!-- Sección: Calculadora -->
+        <div id="calculator" class="section">
+            <div class="actions">
+                <button onclick="updateAllPrices()">Actualizar Precios</button>
+            </div>
+            <h3>📊 Top 10 Crafteos Más Rentables</h3>
+            <table id="profitTable">
+                <thead>
+                    <tr>
+                        <th>Crafteo</th>
+                        <th>Costo</th>
+                        <th>Venta</th>
+                        <th>Ganancia</th>
+                        <th>ROI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="5">Presiona "Actualizar Precios"</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+[
+    {
+        "input": ["ATTRIBUTE_SHARD_PHANPYRE"],
+        "output": "ATTRIBUTE_SHARD_PHANFLARE",
+        "type": "crafting"
+    },
+    {
+        "input": ["ATTRIBUTE_SHARD_PHANFLARE"],
+        "output": "ATTRIBUTE_SHARD_HIDEONLEAF",
+        "type": "crafting"
+    },
+    {
+        "input": ["ATTRIBUTE_SHARD_COD"],
+        "output": "ATTRIBUTE_SHARD_NIGHT_SQUID",
+        "type": "crafting"
+    },
+    {
+        "input": ["ATTRIBUTE_SHARD_NIGHT_SQUID"],
+        "output": "ATTRIBUTE_SHARD_VERDANT",
+        "type": "crafting"
+    },
+    {
+        "input": ["ATTRIBUTE_SHARD_LAPIS_ZOMBIE"],
+        "output": "ATTRIBUTE_SHARD_CHILL",
+        "type": "crafting"
+    },
+    {
+        "input": ["ATTRIBUTE_SHARD_CHILL"],
+        "output": "ATTRIBUTE_SHARD_VORACIOUS_SPIDER",
+        "type": "crafting"
+    },
+    {
+        "input": ["ATTRIBUTE_SHARD_VORACIOUS_SPIDER"],
+        "output": "ATTRIBUTE_SHARD_TANK_ZOMBIE",
+        "type": "crafting"
+    },
+    {
+        "input": ["ATTRIBUTE_SHARD_TANK_ZOMBIE"],
+        "output": "ATTRIBUTE_SHARD_ZEALOT",
+        "type": "crafting"
+    },
+    {
+        "input": ["ATTRIBUTE_SHARD_GOLDEN_GHOUL", "ATTRIBUTE_SHARD_HARPY"],
+        "output": "ATTRIBUTE_SHARD_BEZAL",
+        "type": "crafting"
+    },
+    {
+        "input": ["ATTRIBUTE_SHARD_GOLDEN_GHOUL", "ATTRIBUTE_SHARD_ZEALOT"],
+        "output": "ATTRIBUTE_SHARD_BEZAL",
+        "type": "crafting"
+    },
+    {
+        "input": ["ATTRIBUTE_SHARD_BEZAL"],
+        "output": "ATTRIBUTE_SHARD_YOG",
+        "type": "crafting"
+    },
+    {
+        "input": ["ATTRIBUTE_SHARD_YOG"],
+        "output": "ATTRIBUTE_SHARD_MINER_ZOMBIE",
+        "type": "crafting"
+    }
+]
